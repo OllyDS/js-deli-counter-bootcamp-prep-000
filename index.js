@@ -11,6 +11,16 @@ function takeANumber(katzDeli, name){
   return (`Welcome, ${name}. You are number ${katzDeli.length} in line.`);
 }
 
+function takeANumber(katzDeli){
+  var ticket = 1;
+  katzDeli.push(ticket)
+  ticket++;
+  return "Welcome, you are ticket no. " + ticket;
+}
+
+// to take ticket, Welcome, you are ticket no. x
+// keep track of ticket number
+
 
 // This took me a while. I was trying to use a for loop to state if line was empty ... else ... but couldn't quite get the expected result. With some help from one of the coaches I was able to look into using an array.shift() instead.
 
