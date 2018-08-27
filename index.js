@@ -16,9 +16,7 @@ var ticket = 1;
 
 function takeANumber(katzDeli){
   katzDeli.push(ticket)
-  ticket++;
-  if (ticket === 1) return "Welcome, you are ticket no. 1";
-  return "Welcome, you are ticket no. " + ticket;
+  return "Welcome, you are ticket no. " + ticket++;
 }
 
 // to take ticket, Welcome, you are ticket no. x
