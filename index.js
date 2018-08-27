@@ -11,10 +11,13 @@ function takeANumber(katzDeli, name){
   return (`Welcome, ${name}. You are number ${katzDeli.length} in line.`);
 }
 
+
+var ticket = 1;
+
 function takeANumber(katzDeli){
-  var ticket = 1;
   katzDeli.push(ticket)
   ticket++;
+  if (ticket === 1) return "Welcome, you are ticket no. 1";
   return "Welcome, you are ticket no. " + ticket;
 }
 
